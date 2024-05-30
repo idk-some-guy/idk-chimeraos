@@ -330,4 +330,7 @@ postinstallhook() {
   # enable KMS for sunshine
   setcap cap_sys_admin+p "$(readlink -f /usr/bin/sunshine)"
 
+  #set default sunshine password to follow that of chimeraos
+  /usr/bin/sunshine --creds ${USERNAME} ${USERNAME}
+
 }

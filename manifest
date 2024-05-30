@@ -1,7 +1,7 @@
 #! /bin/bash
 
 export VERSION="46"
-export SYSTEM_DESC="ChimeraOS"
+export SYSTEM_DESC="ChimeraOS - With packages to support remote streaming"
 export SYSTEM_NAME="chimeraos"
 export USERNAME="gamer"
 export SIZE="12000MB"
@@ -256,7 +256,6 @@ export SERVICES="\
 	systemd-timesyncd \
 	swapfile \
 	zerotier-one \
-	sunshine \
 "
 
 export USER_SERVICES="\
@@ -264,6 +263,7 @@ export USER_SERVICES="\
 	pipewire \
 	steam-patch.service \
 	chimera-cart-monitor.service \
+	sunshine \
 "
 
 export FILES_TO_DELETE="\

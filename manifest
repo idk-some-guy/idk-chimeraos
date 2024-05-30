@@ -333,4 +333,8 @@ postinstallhook() {
   #set default sunshine password to follow that of chimeraos
   /usr/bin/sunshine --creds ${USERNAME} ${USERNAME}
 
+  #install decky
+  curl -o /tmp/decky/decky-install.sh https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh && sh /tmp/decky/decky-install.sh
+  rm -rf /tmp/decky
+
 }

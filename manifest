@@ -237,6 +237,7 @@ export AUR_PACKAGES="\
 	steam-removable-media-git \
 	wyvern \
 	zenergy-dkms-git \
+	sunshine-bin \
 "
 
 export SERVICES="\
@@ -255,6 +256,7 @@ export SERVICES="\
 	systemd-timesyncd \
 	swapfile \
 	zerotier-one \
+	sunshine \
 "
 
 export USER_SERVICES="\
@@ -323,4 +325,9 @@ postinstallhook() {
 
 	# set permissions for intel_gpu_top and mangohud
 	setcap cap_perfmon=+ep /usr/bin/intel_gpu_top
+
+
+  # enable KMS for sunshine
+  setcap cap_sys_admin+p "$(readlink -f /usr/bin/sunshine)"
+
 }

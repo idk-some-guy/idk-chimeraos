@@ -1,3 +1,0 @@
-[submodule "pkgs/zerotier-one"]
-	path = pkgs/zerotier-one
-	url = https://gitlab.archlinux.org/archlinux/packaging/packages/zerotier-one

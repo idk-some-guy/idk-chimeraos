@@ -330,4 +330,8 @@ postinstallhook() {
   # enable KMS for sunshine
   setcap cap_sys_admin+p "$(readlink -f /usr/bin/sunshine)"
 
+  #install decky
+  curl -o /tmp/decky/decky-install.sh https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh && sh /tmp/decky/decky-install.sh
+  rm -rf /tmp/decky
+
 }

@@ -238,6 +238,8 @@ export AUR_PACKAGES="\
 	wyvern \
 	zenergy-dkms-git \
 	sunshine-bin \
+	lact \
+	coolercontrol \
 "
 
 export SERVICES="\
@@ -256,6 +258,8 @@ export SERVICES="\
 	systemd-timesyncd \
 	swapfile \
 	zerotier-one \
+	coolercontrold \
+	lactd \
 "
 
 export USER_SERVICES="\
